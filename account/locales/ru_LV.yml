@@ -1,0 +1,520 @@
+---
+loginPage: //rus.delfi.lv/login/
+contentBannerLink:
+  desktop: //g.delfi.lv/delfi-plus/satura-baneris/ru/
+  mobile: //g.delfi.lv/delfi-plus/satura-baneris/ru-mobile/
+error: Ошибка
+getPinCode: Получить код оплаты
+numberMustHave8Digits: Номер телефона должен состоять из 8 цифр
+pinMustHave8Digits: PIN-код состоит из 5 цифр
+pinCodeWithError: PIN-код введен неверно, попробуйте еще раз!
+pleaseEnterPhoneNumber: Введите номер телефона, с которого вы будете платить
+subscriptionNotPurchased: Покупка подписки не удалась
+pleaseTryAgain: Пожалуйста, попробуйте еще раз
+phoneNumber: Номер телефона
+connectYourProvider: Просим связаться с вашим оператором, чтобы решить проблему
+enterPin: Введите полученный PIN-код
+pay: Оплатить
+youAlreadySubscribed: У вас уже есть активная подписка
+thanks: Спасибо
+payment: Оплата
+paid: Samaksāts
+eurFor28days: евро / 28 дней
+eurFor7days: евро / 7 дней
+good: Хорошо
+allChannels: Все каналы
+allCategories: Все категории
+from: С
+to: До
+search: Искать
+keyWord: Ключевое слово
+newsNotFound: Новостей не найдено
+tryChangeDate: Попробуйте увеличить период поиска
+payWithCard: Оплата банковской карточкой
+payWithSms: Оплата SMS
+subscriptionRestoresAutomatically: Подписка продлевается автоматически, пока вы не решите ее отменить
+subscriptionRules:
+  agree: Согласен с
+  rules: правилами пользования
+  rulesLink: //www.delfi.lv/noteikumi/
+  and: и
+  contract: дистанционным договором
+  contractLink:
+    DELFIPLUS: //g.delfi.lv/contracts/delfi_plus_distances_ligums_01_02_2020_RU.pdf
+    MVP: //g.delfi.lv/contracts/mvp_distances_ligums_26_03_2020_LV.pdf
+paymentBlockHeader:
+  subscribe:
+    DELFIPLUS: Подпишитесь на DELFI plus за
+    MVP: Подпишитесь на MVP за
+  subscription: подписка
+  28d:
+    main: EUR за 4 недели
+    firstPayment: EUR за первые 4 недели*
+  1y:
+    main: EUR за год
+    firstPayment: EUR за первый год*
+  footerNote:
+    firstPayment:
+      28d:
+        1: Потом каждые четыре недели будет производиться автоматический платеж -
+        2: евро за период подписки.
+      1y:
+        1: Потом каждый год будет производиться автоматический платеж -
+        2: евро за период подписки.
+thanksForSubscribe: Спасибо, ваша подписка на активизирована
+renewPayment:
+  thanks: Спасибо, ваша подписка возобновлена, и будет автоматически продлена
+  smsInfo:
+    part1: Оплата в размере
+    part2: будет добавлена к вашему счету от мобильного оператора для телефонного номера +
+    part3:
+      DELFIPLUS: Чтобы отказаться, отправьте STOP DELFI
+      MVP: Чтобы отказаться, отправьте STOP MVP
+    part4: на 1881
+  cardInfo:
+    part1: Оплата в размере
+    part2: будет списана со счета вашей карты.
+  error: Ошибка! Не удалось автоматически выполнить платеж. Проверьте платежные данные и выполните платеж повторно.
+restore: Возобновить
+login: Войти
+register: Зарегистрироваться
+resetPassword: Забыли пароль?
+logout: Выйти
+loginTitle: Подключиться
+loginSubtitle: Если у вас нет профиля на DELFI,
+loginSubtitleLink: создайте
+loginAction: Подключиться
+backToLogin: Назад
+registerTitle: Подписаться
+registerSubtitle: Если у вас уже есть профиль на DELFI,
+registerSubtitleLink: войдите
+registerAction: Подписаться
+registerConsent: Я понимаю и соглашаюсь с тем, что мой адрес электронной почты будет использован для связи.
+registerSuccess: "Профиль создан. Проверьте ваш е-мейл: мы выслали письмо с подтверждением на ваш почтовый ящик."
+mergeTitle: Объединить профили
+mergeSubtitle: Выберите основной профиль. Все остальные профили по-прежнему можно будет использовать для авторизации.
+mergeAction: Продолжить
+recoverPasswordTitle: Забыли пароль?
+recoverPasswordSubtitle: Введите ваш е-мейл, и мы отправим письмо с инструкциями по восстановлению пароля.
+recoverPasswordSubtitleLink:
+recoverPasswordAction: Продолжить
+resetPasswordTitle: Восстановить пароль
+resetPasswordSubtitle: ""
+resetPasswordSubtitleLink: Выслать новый код
+resetPasswordAction: Восстановить
+passwordsDoNotMatch: Пароли не совпадают
+socialLogin: Подключиться через профиль в соцсети
+userFirstName: Имя
+userLastName: Фамилия
+userEmailOrPhone: Е-мейл
+userDisplayName: Ник
+userPassword: Пароль
+userGender: Пол
+userGenders:
+  female: Женщина
+  male: Мужчина
+  hidden: Не указывать
+userEmail: Е-мейл
+userPhone: Номер телефона
+userPhoneCountryCode: Код страны
+userPasswordNew: Новый пароль
+userPasswordConfirmation: Пароль еще раз
+userBirthday: День рождения
+userName: Имя
+userSurname: Фамилия
+confirmEmail: Пожалуйста, подтвердите ваш е-мейл!
+linkSentTo: Мы отправили ссылку с подтверждением на
+errorWrongEmailOrPassword: Неправильный е-мейл и/или пароль
+errorUnknown: Ошибка! Попробуйте еще раз.
+errorIdpTaken: Эта социальная сеть уже связана с другим профилем
+errorInvalidPassword: Неправильный пароль!
+errorPasswordTooShort: Пароль должен быть не короче восьми символов!
+errorPasswordsNotSimilar: Пароли не совпадают!
+errorConfirmToRegister: Вы должны согласиться с праилами, что бы создать профиль
+errorFillRequiredFields: Заполните обязательные поля
+errorInvalidEmail: Е-мейл не годится
+errorAllFieldRequired: Пожалуйста, заполните все поля
+btnSave: Сохранить
+btnSend: Отправить
+btnOk: Хорошо
+terminateAccount: Удалить профиль
+terminateAccountInfo: Инструкции по удалению профиля отправлены на ваш е-мейл.
+resendVerification: Отправить
+emailVerificationSent: Письмо с подтверждением выслано на адрес электронной почты, на который зарегистрирован профиль в DELFI
+emailVerificationSentCheckAgain: Письмо с подтверждением уже отправлено. Пожалуйста, проверьте е-мейл, на который зарегистрирован профиль в DELFI
+resetInfoHasBeenSentToEmail: Информация по сбросу пароля отправлена на Ваш е-мейл
+cantFindInSystem: Такая почта не найдена в нашей системе
+emailAlreadyExists: Профиль с таким е-мейлом уже зарегистрирован
+useLogin: Нажмите на кнопку "Подключиться"
+pleaseProvideAnother: Пожалуйста, укажите другой
+pleaseProvideEmail: Пожалуйста, укажите выш е-мейл в разделе "Профиль -> Контакты".
+reader: читатель
+helloMorning: Доброе утро
+helloDay: Добрый день
+helloEvening: Добрый вечер
+accountNavigation:
+  home: Начало
+  profile: Профиль
+  basicInfo: Профиль
+  contactInfo: Контакты
+  passwordChange: Смена пароля
+  notifications: Уведомления
+  subscription: Подписка
+  subscriptionOptions: Способы подписки
+  corporateAccess: Корпоративная подписка
+  delfiPlusSubscription: DELFI plus
+  mvpSubscription: MVP
+  bookmarks: Сохраненные статьи
+  help: Помощь
+  rules: Правила пользования
+  faq: Часто задаваемые вопросы
+  contacts: Контакты
+user:
+  firstname: Имя
+  lastname: Фамилия
+  displayName: Ник
+  id: ID пользователя
+  email: Е-мейл
+  phone: Номер телефона
+  countryCode: Код страны
+  phoneNumber: Номер телефона
+  password: Пароль
+  passwordNew: Новый пароль
+  gender: Пол
+  birthday: День рождения
+edit: Изменить
+myProfile: Профиль
+myContacts: Контакты
+yourSubscriptions: Ваши подписки
+noSubscriptions: Сейчас у вас нет активных подписок
+paymentRules:
+  part1: Согласен с
+  part2: правилами пользования
+  part3: и
+  part4: дистанционным договором
+agree: Согласен
+eur: евро
+subscribe: Подписаться
+learnMore: Подробнее
+readMore: Подробнее
+days: Дней
+hours: Часов
+minutes: Минут
+timeToSubEnd: До конца подписки
+terminateProfile: Удалить профиль
+doYouWantTerminate: Вы уверены, что хотите удалить профиль?
+provideEmailBeforeTerminate: Чтобы удалить профиль, в разделе "Контакты" укажите свой е-мейл, на который мы вышлем ссылку для подтверждения. Затем ещё раз кликните на "Удалить профиль" и следуйте инструкциям.
+back: Назад
+close: Закрыть
+unsubscribeBeforeDelete:
+  text: Чтобы удалить профиль, вам необходимо отказаться от подписки в разделе "Подписка".
+  btn: Открыть раздел
+unsubscribeFromAbonement: Отказаться от подписки
+unsubscribe: Отказаться
+doYouWantUnsubscribeCardDELFIPLUS: Вы уверены, что хотите отказаться от подписки?
+doYouWantUnsubscribeCardMVP: Вы уверены, что хотите отказаться от подписки?
+doYouWantUnsubscribeSmsMVP:
+  part1: Хотите отказаться от подписки? Отправьте SMS с текстом STOP MVP
+  part2: на номер 1881
+doYouWantUnsubscribeSmsDELFIPLUS:
+  part1: Хотите отказаться от подписки? Отправьте SMS с текстом STOP DELFI
+  part2: на номер 1881
+unsubscribeSuccessMVP:
+  part1: Нам очень жаль, что вы решили прервать подписку.
+  part2: Вы можете читать статьи из пакета MVP до конца срока действия подписки. Другие возможности профиля DELFI будут и впредь доступны без ограничений.
+unsubscribeSuccessDELFIPLUS:
+  part1: Нам очень жаль, что вы решили прервать подписку.
+  part2: Вы можете читать статьи из пакета DELFI plus до конца срока действия подписки. Другие возможности профиля DELFI будут и впредь доступны без ограничений.
+corporateSubscription: Корпоративная подписка
+specialSubscription: Бесплатная подписка
+prepaymentSubscription: Оплаченная заранее подписка
+about:
+  title:
+    DELFIPLUS: Про DELFI plus
+    MVP: Про MVP
+  link:
+    DELFIPLUS: //rus.delfi.lv/about-delfi-plus/
+    MVP: //www.delfi.lv/mvp/abonesana/
+whyReadDELFIPLUS:
+  part0:
+    title: Без рекламы
+    text: С 1 февраля подписчики перестанут видеть коммерческую рекламу на всех страницах портала DELFI. Мы покажем вам только ту рекламу, которая связана с нашим порталом – но и она будет занимать совсем немного места. Так мы сможем рассказать вам о новых, самых интересных проектах DELFI – чтобы вы ничего не пропустили.
+  part1:
+    title: Больше оригинального контента
+    text: Мы продолжим работать над проектами визуального сторителлинга. Как минимум раз в месяц будем публиковать развернутое журналистское исследование в нескольких частях.  Каждую неделю на DELFI Plus будут выходить развернутые интервью или переводы лучших материалов из зарубежных СМИ.
+  part2:
+    title: DELFI TV с Янисом Домбурсом
+    text: Подписчики DELFI Plus получат полный доступ к материалам проекта "DELFI TV с Янисом Домбурсом" смотреть передачи и читать статьи можно будет без ограничения по времени. Кроме того, подписчики получат доступ и к другому контенту, который будет производить команда "DELFI TV с Янисом Домбурсом" аналитике, комментариям и т.д.
+whyReadMVP:
+  part0:
+    title: Новое спортивное СМИ
+    text: Где не только рассказывают, но и объясняют — оригинальный контент, аналитика событий и процессов, беседы с людьми из мира спорта, дискуссии и истории из личного опыта.
+  part1:
+    title: Будьте в игре
+    text: Подписчики MVP — поклонники спорта, могут высказывать своё мнение под статьями, задавать вопросы и получать ответы от экспертов.
+  part2:
+    title: Профессиональная команда
+    text: MVP — команда, состоящая из профессиональных спортивных журналистов с десятилетним опытом, их авторитет в мире спорта непререкаем.
+subscriptionOptions: Способы подписки
+corporateSubscriptionBlock:
+  text: Оставьте ваше сообщение, и мы с свяжемся с вами, чтобы предложить самое удобное решение.
+  email: Адрес электронной почты
+  corpName: Название предприятия
+  employCount: Кол-во работников
+sentErrorTryAgain: Ошибка! Попробуйте позже!
+errorTryAgain: Ошибка! Попробуйте позже!
+sentSuccess: Отправлено успешно
+whySubscribeDELFIPLUS: Что дает подписка на DELFI Plus?
+whySubscribeMVP: Что дает подписка на MVP?
+delfiPlusLandingPage: //rus.delfi.lv/about-delfi-plus/
+interestingHeadline: Возможно, вам будет интересно
+delfiAccount: Профиль DELFI
+delfiPlusSubscription: Подписка на DELFI plus
+mvpSubscription: Подписка на MVP
+learnMoreAbout:
+  account: Подробнее о профиле DELFI
+  accountLink: //rus.delfi.lv/delfi-profil/
+  DELFIPLUS: Узнай больше про DELFI plus
+  DELFIPLUSLink: //rus.delfi.lv/about-delfi-plus/
+  MVP: Узнай больше про MVP
+  MVPLink: //www.delfi.lv/mvp/abonesana/
+contactPage:
+  aboutAccount: По вопросам, связанным с профилем DELFI
+  anotherQuestions:
+    part1: По другим вопросам используйте
+    part2: //rus.delfi.lv/kontakti/
+    part3: страницу контактов на DELFI.
+delete: Удалить
+noSavedArticles: Здесь пока ничего нет. Если хотите сохранить статью, нажмите на значок закладки.
+bookmarkFilter:
+  select: Выбрать
+  all: Все
+mySavedArticle: Мои сохраненные статьи
+noNotifications: Новых уведомлений нет
+yourSubscriptionIsActive: Ваша подписка активна.
+yourSubscriptionIsCanceled: Ваша подписка прервана
+subscriptionRetryIn: Подписка будет автоматически продлена
+continueReadDELFIPLUS: Продолжай читать DELFI plus до
+continueReadMVP: Продолжай читать MVP до
+yourSubscriptionActiveTill:
+  0: Ваша подписка активна
+  1: до
+try: Попробуйте
+toTry: Попробовать
+registerCard: Банковская карточка
+registerSms: SMS-сообщение
+trySubscription:
+  alreadySubscribed: Спасибо за поддержку качественной журналистики! Ваша подписка теперь активна.
+  register: Регистрация
+  login: Вход
+  loginWith: Войти через соцсеть
+  confirmRegister: Я понимаю и даю свое согласие на то, что адрес моей электронной почты будет использован для того, чтобы завершить и подтвердить регистрацию.
+  advantages:
+    title: Что вы получите
+    DELFIPLUS:
+      1: Ежемесячно публикуется более 100 статей и видеоматериалов
+      2: DELFI без рекламы
+      3: Видеолекции и полный архив статей
+    MVP:
+      1: Vairāk nekā 20 padziļināti materiāli par tev aktuālām sporta tēmām ik mēnesi
+      2: Sporta žurnālistikas līderu komanda
+      3: Iespēja tikties un apspriesties ar līdzīgi domājošiem
+    info:
+      1: После окончания пробного периода подписка будет продлена автоматически за
+      2: 2,99 евро / 4 недели
+      3: пока вы не решите ее прервать.
+    icon:
+      DELFIPLUS:
+        1: icon-original-content
+        2: icon-horn
+        3: icon-delfi-tv
+      MVP:
+        1: icon-mvp-phone
+        2: icon-mvp-man
+        3: icon-mvp-torch
+tele2Support: Tele2 поддерживает качественную журналистику
+unsubscribeBlock:
+  areYouSure: Вы уверены, что хотите приостановить подписку?
+  cancel: Отменить
+  unsub: Отказаться
+  helpUs: Пожалуйста, помогите нам становиться лучше и расскажите, почему вы приняли такое решение
+  tellMore: Расскажите, пожалуйста, подробнее!
+  reasons:
+    0: Статьи мне неинтересны
+    1: Редко читаю
+    2: По финансовым причинам
+    3: Сделал(а) выбор в пользу другой подписки
+    4: Не устраивает техническое качество и сбои
+    5: Закончился пробный период
+    6: Другая причина
+  submit: Отправить
+  knowImportant:
+    title: Знать и понимать — важно!
+    subtext:
+      DELFIPLUS: Финансовый кризис затронул всех, но мы хотели бы, чтобы у вас была возможность продолжать читать интересные материалы. Поэтому предлагаем вам особую цену подписки на DELFI plus
+      MVP: Финансовый кризис затронул всех, но мы хотели бы, чтобы у вас была возможность продолжать читать интересные материалы. Поэтому предлагаем вам особую цену подписки на MVP
+  till: До  01.02.2021.
+  for4Weeks: за 4 недели
+  accept: Принять
+  notAccept: Нет, спасибо
+  thanksForSubscription:
+    0: Спасибо что были подписаны на
+    1: и поддерживали качественную журналистику!
+    2: Ты в любой момент можешь восстановить подписку
+  stopLoyalty:
+    0: Если вы прервете подписку, перестанет действовать специальное ценовое предложение.
+    1: Вы сможете возобновить подписку по цене 2,99 евро за 4 недели
+dataProccessing: Пожалуйста, подождите, происходит обработка данных.
+promoCode:
+  giftCode: Подарочный код
+  notProvided: Подарочный код не указан
+  code: Подарочный код
+  pleaseEnter:
+    0: Введите подарочный код,
+    1: чтобы активизировать подписку
+  activate: Активизировать
+  toGetPromoSendEmail: Чтобы купить подарочный код, пишите на konts@delfi.lv
+  failed: Вы указали недействительный код.
+  tryAgain: Попробуйте еще раз.
+  limitError: Лимит попыток превышен. Попробуйте ещё раз через
+  success:
+    title: Подарочный код активизирован!
+    create:
+      DELFIPLUS: Ваша подписка на DELFI plus активна до
+      MVP: Ваша подписка на MVP активна до
+    update:
+      0:
+        DELFIPLUS: Ваша подписка на DELFI plus продлена на
+        MVP: Ваша подписка на MVP продлена на
+      1: дней
+  alreadyCorporate: У вас уже есть активная корпоративная подписка!
+  login:
+    0: Войдите в систему для активизации подписки по подарочному коду.
+    1: Для этого вам нужен профиль на DELFI.
+minutesLogic:
+  1: минуту
+  2: минуты
+  3: минуты
+  4: минуты
+  n: минут
+registerBeforeSubscribe: Чтобы оформить подписку или оставить комментарии, зарегистрируйте профиль в DELFI.
+loginBeforeSubscribe: Чтобы оформить подписку или оставить комментарии, подключитесь к своему профилю DELFI.
+anotherCountries: Другие страны
+buttonLoading: Подождите
+year: Год
+month: Месяц
+day: День
+months:
+  1: Январь
+  2: Февраль
+  3: Март
+  4: Апрель
+  5: Май
+  6: Июнь
+  7: Июль
+  8: Август
+  9: Сентябрь
+  10: Октябрь
+  11: Ноября
+  12: Декабрь
+lottery:
+  register:
+    1: Заполните или обновите
+    2: данные о себе и выиграйте
+  pleaseFill: Дополните информацию о себе и выиграйте
+  loginAndFill: Чтобы принять участие в лотерее, войдите в свой аккаунт DELFI и выиграйте
+  registerAndFill: Чтобы принять участие в лотерее, создайте свой аккаунт DELFI и выиграйте
+  wannaBePart: Хочу принять участие в лотерее
+  agree:
+    1: Согласен(-на) с
+    2: правилами обработки личных данных
+    3: privacity-policy-ru.pdf
+  submit: Подтвердить и отправить
+  rules:
+    1: Условия розыгрыша
+    2: samsung-lottery-ru.pdf
+  thanks: Спасибо, анкета заполнена успешно и участвует в лотерее*!
+  duplicate: Ваша заявка на участие в лотерее уже получена. Следите за результатами розыгрыша!
+startLottery: Участвовать в лотерее
+dectaPayment:
+  provideEmailOrPhone: Пожалуйста, укажите е-почту и/или номер телефона
+  next: Дальше
+errors:
+  badPhoneNumber: Номер телефона не годен, пожалуйста, укажите другой
+  onlyNumbersAllowInPhone: Номер телефона должен состоять только из цифр
+  countryCodeAlreadyProvided: Код страны уже указан
+productInfoAboutFirstWeek:
+  short: Потом каждые четыре недели будет производиться автоматический платеж - 2,99 евро за период подписки, с помощью указанного вами способа оплаты.
+  long:  Потом каждые четыре недели будет производиться автоматический платеж - 2,99 евро за период подписки, с помощью указанного вами способа оплаты. Подписку можно прервать в любой момент в своем профиле DELFI.
+tryAgainButton: Попробовать еще раз
+subscriptionNotGiven: Подписка не оформлена
+timeOut: Время оплаты истекло
+subscriptionDuration:
+  1y: Год
+  28d: 4 недели
+subscriptionFor:
+  28d: за 4 недели
+  1y: за год
+serviceAutoExtendsWithPrice:
+  1y:
+    1: Подписка будет автоматически продлена через 1 год по цене
+    2: евро.
+  28d:
+    1: Подписка будет автоматически продлена через 28 дней по цене
+    2: евро.
+serviceAutoExtends:
+  1y:
+    1: Подписка будет автоматически продлена через 1 год
+  28d:
+    1: Подписка будет автоматически продлена через 28 дней
+alreadySubscribed:
+  1y: Что бы приобрести годовую подписку, отпишитесь от четырех недельной.
+  28d: Спасибо за поддержку качественной журналистики! Ваша подписка уже активна.
+paymentCard:
+  subscriptionStatus:
+    subscribed: Ваша подписка активна. Она будет автоматически возобновлена
+    cancelled: Ваша подписка прервана. Продолжайте читать до
+    corporate: Ваша корпоративная подписка активна до
+    special: Ваша подписка активна до
+    prepayment: Ваша оплаченная заранее подписка активна до
+  activeCard:
+    active: прервать подписку
+    cancelled: возобновить подписку
+  about:
+    DELFIPLUS:
+      text: Про DELFI plus
+      link: //rus.delfi.lv/about-delfi-plus/
+    MVP:
+      text: Про MVP
+      link: //www.delfi.lv/mvp/abonesana/
+  duration:
+    single:
+      first:
+        28d: Первые 4 недели
+        1y: Первый год
+      default:
+        28d: 4 недели
+        1y: Годовая подписка
+    bundle:
+      first:
+        28d: Комплект - первые 4 недели
+        1y: Комплект - первый год
+      default:
+        28d: Комплект - 4 недели
+        1y: Комплект - год
+    after: затем
+  nextPaymentAfter:
+    28d: следующий платеж через 4 недели -
+    1y: следующий платеж через год -
+  subscribe: подписаться
+  article:
+    advantages:
+      DELFIPLUS:
+        1: Ежемесячно публикуется более 80 статей и видеоматериалов
+        2: Репортажи, интервью, аналитика, расследования и обзоры
+        3: DELFI без рекламы
+      MVP:
+        1: Vairāk nekā 20 padziļināti materiāli par tev aktuālām sporta tēmām ik mēnesi
+        2: Sporta žurnālistikas līderu komanda
+        3: Iespēja tikties un apspriesties ar līdzīgi domājošiem
+    readContent: Читай весь платный контент без ограничений!

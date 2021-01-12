@@ -1,0 +1,26 @@
+mutation ($process: Process!, $createdBy: String, $action: String, $description: String, $content: JSON){
+    logProcessing(
+        input: {
+            process: $process
+            createdBy: $createdBy
+            action: $action
+            description: $description
+            content: $content
+        }
+    ) {
+        response{
+            status
+            message
+            error{
+                message
+                origin
+            }
+        }
+        pager{
+            count
+            limit
+            offset
+        }
+    }
+}
+

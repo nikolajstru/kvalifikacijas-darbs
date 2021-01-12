@@ -1,0 +1,39 @@
+include:
+  - https://static.delfi.net/ci-yaml-include/latest/node/node_modules.yml
+  - https://static.delfi.net/ci-yaml-include/latest/node/lint.yml
+  - https://static.delfi.net/ci-yaml-include/latest/node/build.yml
+  - https://static.delfi.net/ci-yaml-include/latest/review/reviewapp-static.yml
+  - https://static.delfi.net/ci-yaml-include/latest/review/build-bundle-review.yml
+
+variables:
+  NODE_VERSION: "10"
+  DEPLOY_DIR: "/www/htdocs/gfx/vue-embeds"
+
+stages:
+  - prepare
+  - test
+  - build
+  - review
+  - deploy:admin
+
+build:prod:
+  extends: .build-base
+  variables:
+    BASE_URL: "https://g.neo.delfi.lv/vue-embeds/"
+
+deploy:admin:
+  stage: deploy:admin
+  variables:
+    # no git checkout
+    GIT_STRATEGY: none
+  dependencies:
+  - build:prod
+  script:
+  - rsync -a "$CI_PROJECT_DIR/dist/" "$DEPLOY_DIR"
+  - cd "$DEPLOY_DIR"
+  - ls -lah
+  tags:
+  - neo
+  environment:
+    name: deployment/admin
+    url: "https://g.neo.delfi.lv/vue-embeds"

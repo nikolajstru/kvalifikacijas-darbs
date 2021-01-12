@@ -1,0 +1,103 @@
+query (
+    $limit: Int
+    $offset: Int
+    $orderBy: UserAndProductFields
+    $order: OrderAscDsc
+    $filter: UserFilterFunctions
+    $filterParameter: String
+    $product: [String]!
+    $userId: [Int]
+    $firstName: String
+    $lastName: String
+    $gender: String
+    $birthday: String
+    $email: String
+    $phone: String
+    $created: String
+    $modified: String
+
+    $productUserKey: String
+    $key: String
+    $subscriptionRecurring: Boolean
+    $subscriptionAccess: Boolean
+    $subscriptionType: String
+    $subscriptionValidFrom: String
+    $subscriptionValidTo: String
+    $loyalStatus: Boolean
+    $loyalFrom: String
+    $productTrial: Boolean
+    $productTrialValidTo: String
+    $lastTimeLoggedIn: String
+){
+    getUsers(
+        input: {
+            limit: $limit
+            offset: $offset
+            orderBy: $orderBy
+            order: $order
+            filter: $filter
+            filterParameter: $filterParameter
+            product: $product
+            userId: $userId
+            firstName: $firstName
+            lastName: $lastName
+            gender: $gender
+            birthday: $birthday
+            email: $email
+            phone: $phone
+            created: $created
+            modified: $modified
+            productUserKey: $productUserKey
+            key: $key
+            subscriptionRecurring: $subscriptionRecurring
+            subscriptionAccess: $subscriptionAccess
+            subscriptionType: $subscriptionType
+            subscriptionValidFrom: $subscriptionValidFrom
+            subscriptionValidTo: $subscriptionValidTo
+            loyalStatus: $loyalStatus
+            loyalFrom: $loyalFrom
+            productTrial: $productTrial
+            productTrialValidTo: $productTrialValidTo
+            lastTimeLoggedIn: $lastTimeLoggedIn
+        }
+    ) {
+        users {
+            userId
+            firstName
+            lastName
+            gender
+            birthday
+            email
+            phone
+            created
+            modified
+            productUserKey
+            product
+            key
+            subscriptionRecurring
+            subscriptionAccess
+            subscriptionType
+            subscriptionValidFrom
+            subscriptionValidTo
+            loyalStatus
+            loyalFrom
+            productTrial
+            productTrialValidTo
+            lastTimeLoggedIn
+        }
+        response{
+            status
+            message
+            error{
+                message
+                origin
+            }
+        }
+        pager{
+            count
+            limit
+            offset
+        }
+    }
+}
+

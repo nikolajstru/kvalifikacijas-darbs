@@ -1,0 +1,43 @@
+.virtual-list-table {
+  height: 90vh;
+  overflow-y: auto;
+  tbody {
+    display:block;
+    overflow:auto;
+  }
+  thead, tbody tr {
+    display:table;
+    width:100%;
+    table-layout:fixed;
+  }
+
+  th, td {
+    padding: .75rem;
+    vertical-align: top;
+  }
+  th {
+    position: relative;
+  }
+}
+.date-time-picker .is-disabled .custom-button {
+  display: none !important;
+}
+
+.date-time-picker input {
+  height: 33px !important;
+  min-height: 33px !important;
+}
+.custom-overlay-spinner{
+  .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #ecececd9;
+    z-index: 2;
+  }
+  .overlay-spinner {
+    position: absolute;
+    top: 40%;
+
+  }
+}

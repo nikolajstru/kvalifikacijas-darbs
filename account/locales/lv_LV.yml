@@ -1,0 +1,520 @@
+---
+loginPage: //www.delfi.lv/login/
+contentBannerLink:
+  desktop: //g.delfi.lv/delfi-plus/satura-baneris/lv/
+  mobile: //g.delfi.lv/delfi-plus/satura-baneris/lv-mobile/
+error: Kļūda
+getPinCode: Saņemt apmaksas kodu
+numberMustHave8Digits:  Tālruņa numurā jābūt 8 cipariem
+pinMustHave8Digits: PIN kods sastāv no 5 cipariem
+pinCodeWithError: PIN kods ievadīts kļūdaini, mēģini vēlreiz
+pleaseEnterPhoneNumber: Lūdzu, ievadi tālruņa numuru, no kura vēlies veikt apmaksu
+subscriptionNotPurchased: Abonements nav iegādāts
+pleaseTryAgain: Lūdzu, mēģini vēlreiz
+phoneNumber: Tālruņa numurs
+connectYourProvider: Lūdzam sazināties ar savu operatoru, lai atrisinātu problēmu.
+enterPin: Ievadi īsziņā saņemto PIN kodu
+pay: Apmaksāt
+youAlreadySubscribed: Tev jau ir abonements
+thanks: Paldies
+payment: Samaksa
+paid: Samaksāts
+eurFor28days: eur / 28 dienas
+eurFor7days: eur / 7 dienas
+good: Labi
+allChannels: Visas sadaļas
+allCategories: Visas kategorijas
+from: No
+to: Līdz
+search: Meklēt
+keyWord: Atslēgas vārds
+newsNotFound: Nav atrastas ziņas
+tryChangeDate: Mēģini meklēt par plašāku periodu
+payWithCard: Maksāt ar norēķinu karti
+payWithSms: Maksāt ar SMS
+subscriptionRestoresAutomatically: Abonements tiek atjaunots automātiski, līdz izvēlēsieties to pārtraukt
+subscriptionRules:
+  agree: Piekrītu
+  rules: lietošanas noteikumiem
+  rulesLink: //www.delfi.lv/noteikumi/
+  and: un
+  contract: distances līgumam
+  contractLink:
+    DELFIPLUS: //g.delfi.lv/contracts/delfi_plus_distances_ligums_01_02_2020_LV.pdf
+    MVP: //g.delfi.lv/contracts/mvp_distances_ligums_26_03_2020_LV.pdf
+paymentBlockHeader:
+  subscribe:
+    DELFIPLUS: Abonē DELFI plus par
+    MVP: Abonē MVP par
+  subscription: abonements
+  28d:
+    main: eiro uz 4 nedēļām
+    firstPayment: eiro uz pirmajām 4 nedēļām*
+  1y:
+    main: eiro uz gadu
+    firstPayment: eiro uz pirmo gadu*
+  footerNote:
+    firstPayment:
+      28d:
+        1: Pēc tam ik pēc četrām nedēļām tiks veikts automātiskais maksājums -
+        2: eiro par abonēšanas periodu
+      1y:
+        1: Pēc tam ik pēc gada tiks veikts automātiskais maksājums -
+        2: eiro par abonēšanas periodu
+thanksForSubscribe: Paldies, tavs iegādātais abonements ir aktīvs
+renewPayment:
+  thanks: Paldies, Tavs abonements ir atjaunots un tiks automātiski pagarināts.
+  smsInfo:
+    part1: Samaksa
+    part2: tiks pievienota jūsu mobilā operatora rēķinam telefona numuram +
+    part3:
+      DELFIPLUS: Lai atteiktos, sūti īsziņu ar tekstu STOP DELFI
+      MVP: Lai atteiktos, sūti īsziņu ar tekstu STOP MVP
+    part4: uz 1881
+  cardInfo:
+    part1: Samaksa
+    part2: tiks iegrāmatota no jūsu kartes konta.
+  error: Kļūda! Maksājumu neizdevās atjaunot automātiski. Pārbaudiet maksājuma datus un veiciet maksājumu atkārtoti.
+restore: Atjaunot
+login: Pieslēgties
+register: Reģistrēties
+resetPassword: Aizmirsi paroli?
+logout: Iziet
+loginTitle: Pieslēgties
+loginSubtitle: Ja tev vēl nav DELFI konta,
+loginSubtitleLink: reģistrējies
+loginAction: Pieslēgties
+backToLogin: Atpakaļ
+registerTitle: Pierakstīties
+registerSubtitle: Ja tev jau ir DELFI konts,
+registerSubtitleLink: pieslēdzies
+registerAction: Reģistrēties
+registerConsent: Saprotu un piekrītu, ka mana e-pasta adrese tiks izmantota saziņai ar mani.
+registerSuccess: Konts veiksmīgi izveidots. Lūdzu pārbaudiet savu e-pastu, lai saņemtu apstiprinājuma linku.
+mergeTitle: Kontu apvienošana
+mergeSubtitle: Lūdzu izvēlies savu galveno kontu. Pārējie konti arī turpmāk būs pieejami kā autorizācijas metodes.
+mergeAction: Turpināt
+recoverPasswordTitle: Aizmirsi paroli?
+recoverPasswordSubtitle: Lai atjaunotu paroli, ievadi savu e-pastu un saņemsi informāciju paroles atjaunošanai.
+recoverPasswordSubtitleLink: ""
+recoverPasswordAction: Turpināt
+resetPasswordTitle: Atjaunot paroli
+resetPasswordSubtitle: ""
+resetPasswordSubtitleLink: Nosūtīt kodu atkārtoti
+resetPasswordAction: Atjaunot
+passwordsDoNotMatch: Ievadītās paroles nesakrīt
+socialLogin: Pieslēdzies, izmantojot kādu no sociālo tīklu kontiem
+userFirstName: Vārds
+userLastName: Uzvārds
+userEmailOrPhone: E-pasts
+userDisplayName: Lietotājvārds
+userEmail: E-pasts
+userPhone: Telefona numurs
+userPhoneCountryCode: Valsts kods
+userPassword: Parole
+userGender: Dzimums
+userGenders:
+  female: Sieviete
+  male: Vīrietis
+  hidden: Nevēlos norādīt
+userPasswordNew: Jaunā parole
+userPasswordConfirmation: Jaunā parole atkārtoti
+userBirthday: Dzimšanas datums
+userName: Vārds
+userSurname: Uzvārds
+confirmEmail: Lūdzu apstipriniet e-pasta adresi!
+linkSentTo: Apstiprinājuma saite nosūtīta uz
+errorWrongEmailOrPassword: Nepareizs e-pasts un/vai parole
+errorUnknown: Neparedzēta kļūda, mēģini vēlreiz
+errorIdpTaken: Šis profils ir piesaistīts citam Delfi kontam
+errorInvalidPassword: Nepareiza parole!
+errorPasswordTooShort: Nepiemērota parole. Paroles minimālais garums ir 8 rakstzīmes.
+errorPasswordsNotSimilar: Paroles nesakrīt!
+errorConfirmToRegister: Jums jāpiekrīt noteikumiem, lai reģistrētos
+errorFillRequiredFields: Aizpildiet obligātus laukus
+errorInvalidEmail: E-pasts nav derīgs
+errorAllFieldRequired: Lūdzu, aizpildiet visus laukus
+btnSave: Saglabāt
+btnSend: Nosūtīt
+btnOk: Labi
+terminateAccount: Dzēst kontu
+terminateAccountInfo: Konta dzēšanas instrukcijas ir nosūtītas uz kontā norādīto e-pasta adresi
+resendVerification: Nosūtīt atkārtoti
+emailVerificationSent: E-pasta apstiprinājums nosūtīts uz e-pastu ar kuru reģistrēts DELFI konts
+emailVerificationSentCheckAgain: E-pasta apstiprinājums jau nosūtīts, lūdzu pārbaudi kontam piesaistīto e-pastu
+resetInfoHasBeenSentToEmail: Paroles atiestatīšanas informācija tika nosūtīta uz jūsu e-pastu.
+cantFindInSystem: Tāds epasts nav atrasts mūsu sistēmā
+emailAlreadyExists: Konts ar šādu epastu jau ir reģistrēts
+useLogin: Izmantojiet pogu pieslēgties
+pleaseProvideAnother: Lūdzu, norādiet citu
+pleaseProvideEmail: Lūdzu, norādiet savu e-pastu sadaļā "Profils -> Kontaktinformācija"
+reader: lasītāj
+helloMorning: Labrīt
+helloDay: Labdien
+helloEvening: Labvakar
+accountNavigation:
+  home: Sākums
+  profile: Profils
+  basicInfo: Mans profils
+  contactInfo: Kontaktinformācija
+  passwordChange: Paroles maiņa
+  notifications: Paziņojumi
+  subscription: Abonēšana
+  subscriptionOptions: Abonēšana iespējas
+  corporateAccess: Korporatīvais abonements
+  delfiPlusSubscription: DELFI plus
+  mvpSubscription: MVP
+  bookmarks: Saglabātie raksti
+  help: Palīdzība
+  rules: Lietošanas noteikumi
+  faq: Biežāk uzdotie jautājumi
+  contacts: Kontakti
+user:
+  firstname: Vārds
+  lastname: Uzvārds
+  displayName: Lietotājvārds
+  id: Lietotāja ID numurs
+  email: E-pasts
+  phone: Telefona numurs
+  countryCode: Valsts kods
+  phoneNumber: Telefona numurs
+  password: Parole
+  passwordNew: Jaunā parole
+  gender: Dzimums
+  birthday: Dzimšanas datums
+edit: Rediģēt
+myProfile: Mans profils
+myContacts: Kontaktinformācija
+yourSubscriptions: Tavi abonementi
+noSubscriptions: Tev šobrīd nav aktīvu abonementu
+paymentRules:
+  part1: Piekrītu
+  part2: lietošanas noteikumiem
+  part3: un
+  part4: distances līgumam
+agree: Piekrītu
+eur: eiro
+subscribe: Abonēt
+learnMore: Uzzināt vairāk
+readMore: Lasi vairāk
+days: Dienas
+hours: Stundas
+minutes: Minūtes
+timeToSubEnd: Līdz abonementa beigām
+terminateProfile: Dzēst kontu
+doYouWantTerminate: Vai tiešām vēlies dzēst savu DELFI kontu?
+provideEmailBeforeTerminate: Lai dzēstu kontu, sadaļā "Kontaktinformācija" norādi savu e-pastu, uz kuru nosūtīsim apstiprinājuma saiti. Kad tas izdarīts, vēlreiz nospied pogu "Dzēst kontu" un seko instrukcijām.
+back: Atpakaļ
+close: Aizvērt
+unsubscribeBeforeDelete:
+  text: Lai dzēstu kontu, vispirms sadaļā "Abonēšana" nepieciešams pārtraukt abonementu.
+  btn: Atvērt sadaļu
+unsubscribeFromAbonement: Pārtraukt abonementu
+unsubscribe: Pārtraukt
+doYouWantUnsubscribeCardDELFIPLUS: Vai tiešām vēlies pārtraukt "DELFI plus" abonementu?
+doYouWantUnsubscribeCardMVP: Vai tiešām vēlies pārtraukt "MVP" abonementu?
+doYouWantUnsubscribeSmsMVP:
+  part1: Lai pārtrauktu "MVP" abonēšanu, sūti īsziņu ar tekstu STOP MVP
+  part2: uz 1881
+doYouWantUnsubscribeSmsDELFIPLUS:
+  part1: Lai pārtrauktu "DELFI plus" abonēšanu, sūti īsziņu ar tekstu STOP DELFI
+  part2: uz 1881
+unsubscribeSuccessMVP:
+  part1: Mums žēl, ka izvēlējies pārtraukt "MVP" abonēšanu.
+  part2: Turpini lasīt "MVP" ziņas līdz abonementa termiņa beigām, kā arī izmanto DELFI kontu ērtākai satura patērēšanai bez ierobežojumiem arī turpmāk.
+unsubscribeSuccessDELFIPLUS:
+  part1: Mums žēl, ka izvēlējies pārtraukt "DELFI plus" abonēšanu.
+  part2: Turpini lasīt "DELFI plus" ziņas līdz abonementa termiņa beigām, kā arī izmanto DELFI kontu ērtākai DELFI satura patērēšanai bez ierobežojumiem arī turpmāk.
+corporateSubscription: Korporatīvais abonements
+specialSubscription: Bezmaksas abonements
+prepaymentSubscription: Priekšapmaksas abonements
+about:
+  title:
+    DELFIPLUS: Par DELFI plus
+    MVP: Par MVP
+  link:
+    DELFIPLUS: //www.delfi.lv/par-delfi-plus/
+    MVP: //www.delfi.lv/mvp/abonesana/
+whyReadDELFIPLUS:
+  part0:
+    title: DELFI bez komercreklāmas
+    text: Turpmāk “DELFI plus” abonentiem visās DELFI lapās vairs nebūs redzama komercreklāma, padarot lasīšanas pieredzi ērtāku un patīkamāku. Reklāmas vietu skaits tiks samazināts par 95%, un atlikušie 5% jūs informēs par DELFI satura projektiem, nozīmīgiem nozares pasākumiem un citiem noderīgiem jaunumiem.
+  part1:
+    title: Oriģināls saturs
+    text: Turpināsim vizuālās stāstniecības projektu jaunradi, vismaz reizi mēnesī publicējot izvērstu žurnālistisku pētījumu vairākās sērijās. Ik nedēļu sarūpēsim portretintervijas un stāstus par aizraujošām personībām. Regulāri, vismaz divreiz mēnesī, ekskluzīvi ļausim lasīt prestižu ārvalstu mediju un autoru rakstus, ko latviski nebūs iespējams izlasīt citur.
+  part2:
+    title: DELFI TV ar Jāni Domburu pilnā apjomā
+    text: Turpmāk pilnos “DELFI TV ar Jāni Domburu” raidījuma ierakstus piedāvāsim tikai abonentiem jau nākamajā dienā pēc raidījuma. Kā arī tikai abonentiem būs pieejami izvērsti, analītiski raksti, kas kanālā “DELFI TV ar Jāni Domburu” tiks publicēti gan par raidījumos izskanējušām tēmām, gan citām aktualitātēm.
+whyReadMVP:
+  part0:
+    title: Jauns sporta medijs
+    text: Kas ļauj ne tikai uzzināt, bet saprast - oriģināls saturs, notikumu un procesu analītika, sarunas ar sporta vides ļaudīm, diskusijas un cilvēkstāsti.
+  part1:
+    title: Iesaisties spēlē
+    text: Abonenti – sporta fani MVP var izteikt savu viedokli pie rakstiem, kā arī uzdot jautājumus un saņemt atbildes no jomas speciālistiem.
+  part2:
+    title: Profesionāla komanda
+    text: MVP veido profesionālu sporta žurnālistu komanda, kuru pieredze mērāma pat gadu desmitos un autoritāte sporta sabiedrībā ir neapstrīdama.
+subscriptionOptions: Abonēšanas iespējas
+corporateSubscriptionBlock:
+  text: Ievadi informāciju, un mēs ar jums sazināsimies, lai piedāvātu labāko risinājumu tev un taviem kolēģiem.
+  email: E-pasta adrese
+  corpName: Uzņēmuma nosaukums
+  employCount: Darbinieku skaits
+sentErrorTryAgain: Kļūda! Mēģini vēlāk!
+errorTryAgain: Kļūda! Mēģini vēlāk!
+sentSuccess: Veikmīgi nosūtīts
+whySubscribeDELFIPLUS: Kāpēc abonēt DELFI plus?
+whySubscribeMVP: Kāpēc abonēt MVP?
+delfiPlusLandingPage: //www.delfi.lv/par-delfi-plus/
+interestingHeadline: Raksti, kas tevi varētu interesēt
+delfiAccount: DELFI konts
+delfiPlusSubscription: DELFI plus abonēšana
+mvpSubscription: MVP abonēšana
+learnMoreAbout:
+  account: Uzzini vairāk par DELFI kontu
+  accountLink: //www.delfi.lv/delfi-konts/
+  DELFIPLUS: Uzzini vairāk par DELFI plus
+  DELFIPLUSLink: //www.delfi.lv/par-delfi-plus/
+  MVP: Uzzini vairāk par MVP
+  MVPLink: //www.delfi.lv/mvp/abonesana/
+contactPage:
+  aboutAccount: Saziņai par DELFI kontu
+  anotherQuestions:
+    part1: Citu jautājumu gadījumā aicinām izmantot
+    part2: //www.delfi.lv/kontakti/
+    part3: DELFI kontaktu sadaļu.
+delete: Dzēst
+noSavedArticles: Tev pašlaik nav saglabāts neviens raksts. Lai saglabātu rakstu izlasīšanai vēlāk, meklē grāmatzīmi raksta skatā.
+bookmarkFilter:
+  select: Atlasīt
+  all: Visi
+mySavedArticle: Mani saglabātie raksti
+noNotifications: Šobrīd Tev nav jaunu paziņojumu
+yourSubscriptionIsActive: Tavs abonements ir aktīvs.
+yourSubscriptionIsCanceled: Tavs abonements ir pārtraukts.
+subscriptionRetryIn: Tas tiks atjaunots automātiski
+continueReadDELFIPLUS: Turpini lasīt DELFI plus līdz
+continueReadMVP: Turpini lasīt MVP līdz
+yourSubscriptionActiveTill:
+  0: Tavs abonements ir aktīvs
+  1: līdz
+try: Izmēģini
+toTry: Izmēģināt
+registerCard: Reģistrē bankas karti
+registerSms: Reģistrējies ar SMS
+trySubscription:
+  alreadySubscribed: Paldies, ka atbalsti kvalitatīvu žurnālistiku! Tavs abonements jau ir aktīvs.
+  register: Reģistrēties
+  login: Pieslēgties
+  loginWith: Pieslēdzies, izmantojot kādu no sociālo tīklu kontiem
+  confirmRegister: Saprotu un piekrītu, ka mana e-pasta adrese tiks izmantota saziņai, lai apstiprinātu un sekmīgi pabeigtu reģistrāciju.
+  advantages:
+    title: Ko tu saņemsi
+    DELFIPLUS:
+      1: Ik mēnesi vairāk nekā 100 rakstu un video materiālu
+      2: DELFI bez komercreklāmas
+      3: Videolekcijas un apjomīgs rakstu arhīvs
+    MVP:
+      1: Vairāk nekā 20 padziļināti materiāli par tev aktuālām sporta tēmām ik mēnesi
+      2: Sporta žurnālistikas līderu komanda
+      3: Iespēja tikties un apspriesties ar līdzīgi domājošiem
+    info:
+      1: Pēc izmēģinājuma perioda beigām abonements tiks atjaunots automātiski par
+      2: 2,99 eiro / 4 nedēļas
+      3: līdz izvēlēsies to pārtraukt.
+    icon:
+      DELFIPLUS:
+        1: icon-original-content
+        2: icon-horn
+        3: icon-delfi-tv
+      MVP:
+        1: icon-mvp-phone
+        2: icon-mvp-man
+        3: icon-mvp-torch
+tele2Support: Tele2 atbalsta kvalitatīvu žurnālistiku
+unsubscribeBlock:
+  areYouSure: Vai esi drošs, ka vēlies pārtraukt abonēšanu?
+  cancel: Atcelt
+  unsub: Pārtraukt
+  helpUs: Lūdzu, palīdzi mums augt un pastāsti, kāpēc pārtrauc abonēšanu
+  tellMore: Pastāsti, lūdzu, vairāk!
+  reasons:
+    0: Neinteresē
+    1: Reti lasu jūsu rakstus
+    2: Finansiāli apsvērumi
+    3: Izvēlos citas abonēšanas iespējas
+    4: Neapmierina tehniskais produkta izpildījums
+    5: Beidzās izmēģinājuma periods
+    6: Cits iemesls
+  submit: Iesniegt
+  knowImportant:
+    title: Zināt un saprast ir svarīgi!
+    subtext:
+      DELFIPLUS: Mēs visi finanšu krīzē esam vienā laivā, bet vēlamies saglabāt tev iespēja turpināt lasīt kvalitatīvu informāciju. Tāpēc īpašais “DELFI plus” piedāvājums tieši tev
+      MVP: Mēs visi finanšu krīzē esam vienā laivā, bet vēlamies saglabāt tev iespēja turpināt lasīt kvalitatīvu informāciju. Tāpēc īpašais “MVP” piedāvājums tieši tev
+  till: Līdz 01.02.2021.
+  for4Weeks: par četrām nedēļām
+  accept: Pieņemt
+  notAccept: Pārtraukt
+  thanksForSubscription:
+    0: Paldies, ka abonēji
+    1: un atbalstīji kvalitatīvu žurnālistiku!
+    2: Tu jebkurā laikā vari atjaunot savu abonementu.
+  stopLoyalty:
+    0: Ja izvēlies pārtraukt abonēšanu, lojalitātes cenas piedāvājums netiks saglabāts.
+    1: Atjaunot abonementu varēsi par 2,99 eiro uz 4 nedēļām
+dataProccessing: Lūdzu uzgaidiet, notiek datu apstrāde
+promoCode:
+  giftCode: Dāvanu kods
+  notProvided: Dāvanu kods nav norādīts
+  code: Dāvanu kods
+  pleaseEnter:
+    0: Lūdzu, ievadi dāvanu kodu,
+    1: lai aktivizētu abonementu
+  activate: Aktivizēt
+  toGetPromoSendEmail: Lai iegādātos dāvanu kodu, raksti uz konts@delfi.lv
+  failed: Norādītais kods diemžēl nav derīgs.
+  tryAgain: Mēģini vēlreiz.
+  limitError: Sasniegt mēģinājumu limits. Mēģini vēlreiz pēc
+  success:
+    title: Dāvanu kods veiksmīgi aktivizēts!
+    create:
+      DELFIPLUS: Tavs DELFI plus abonements ir aktīvs līdz
+      MVP: Tavs MVP abonements ir aktīvs līdz
+    update:
+      0:
+        DELFIPLUS: Pie tava esošā DELFI plus abonementa termiņa ir pievienotas
+        MVP: Pie tava esošā MVP abonementa termiņa ir pievienotas
+      1: dienas
+  alreadyCorporate: Tev jau ir aktīvs korporatīvais abonements!
+  login:
+    0: Lai izmantotu dāvanu karti un aktivizētu abonementu, pieslēdzies.
+    1: Ja tev vēl nav DELFI konta, tad reģistrējies.
+minutesLogic:
+  1: minūtes
+  2: minūtēm
+  3: minūtēm
+  4: minūtēm
+  n: minūtēm
+registerBeforeSubscribe: Lai abonētu maksas saturu vai komentētu, reģistrē DELFI kontu.
+loginBeforeSubscribe: Lai abonētu maksas saturu vai komentētu, pieslēdzies savam DELFI kontam.
+anotherCountries: Citas valstis
+buttonLoading: Uzgaidiet
+year: Gads
+month: Mēnesis
+day: Diena
+months:
+  1: Janvāris
+  2: Februāris
+  3: Marts
+  4: Aprīlis
+  5: Maijs
+  6: Jūnijs
+  7: Jūlijs
+  8: Augusts
+  9: Septembris
+  10: Oktobris
+  11: Novembris
+  12: Decembris
+lottery:
+  register:
+    1: Reģistrē vai atjauno
+    2: DELFI kontu un laimē
+  pleaseFill: Papildini informāciju par sevi un laimē
+  loginAndFill: Lai piedalītos loterijā, pieslēdzies savam DELFI kontam un laimē
+  registerAndFill: Lai piedalītos loterijā, reģistrē DELFI kontu un laimē
+  wannaBePart: Vēlos piedalīties loterijā
+  agree:
+    1: Piekrītu privātuma
+    2: noteikumiem
+    3: privacity-policy-lv.pdf
+  submit: Apstiprināt un iesniegt
+  rules:
+    1: Izlozes noteikumi
+    2: samsung-lottery.pdf
+  thanks: Paldies, anketa aizpildīta veiksmīgi un piedalās loterijā*!
+  duplicate: Tavs loterijas pieteikums jau ir saņemts. Seko līdzi izložu rezultātiem!
+startLottery: Piedalīties loterijā
+dectaPayment:
+  provideEmailOrPhone: Lūdzu, norādiet e-pasta adresi un/vai tālruņa numuru
+  next: Tālāk
+errors:
+  badPhoneNumber: Tālruņa numur nav derīgs, lūdzu, norādiet citu
+  onlyNumbersAllowInPhone: Tālruņa numurs drīkst sastāvēt tikai no cipariem
+  countryCodeAlreadyProvided: Valsts kods jau norādīts
+productInfoAboutFirstWeek:
+  short: Pēc tam ik pēc četrām nedēļām tiks veikts automātiskais maksājums - 2,99 eiro par abonēšanas periodu
+  long:  Pēc tam ik pēc četrām nedēļām tiks veikts automātiskais maksājums - 2,99 eiro par abonēšanas periodu, izmantojot tavu norādīto apmaksas metodi. Abonēšanu vari pārtraukt jebkurā brīdī savā DELFI kontā
+tryAgainButton: Mēģināt vēlreiz
+subscriptionNotGiven: Abonements nav iegādāts
+timeOut: Apmaksas laiks beidzies
+subscriptionDuration:
+  1y: Gads
+  28d: 4 nedēļas
+subscriptionFor:
+  28d: par 4 nedēļām
+  1y: par gadu
+serviceAutoExtendsWithPrice:
+  1y:
+    1: Pēc 1 gada tiks veikts automātisks maksājums -
+    2: eiro par abonēšanas periodu.
+  28d:
+    1: Pēc 28 dienām tiks veikts automātisks maksājums -
+    2: eiro par abonēšanas periodu.
+serviceAutoExtends:
+  1y:
+    1: Pēc 1 gada tiks veikts automātisks maksājums
+  28d:
+    1: Pēc 28 dienām tiks veikts automātisks maksājums
+alreadySubscribed:
+  1y: Lai iegādātos gada abonementu, pārtrauc 4 nedēļu abonementu.
+  28d: Paldies, ka atbalsti kvalitatīvu žurnālistiku! Tavs abonements jau ir aktīvs.
+paymentCard:
+  subscriptionStatus:
+    subscribed: Tavs abonements ir aktīvs. Tas tiks atjaunots automātiski
+    cancelled: Tavs abonements ir pārtraukts. Turpini lasīt līdz
+    corporate: Tavs korporatīvais abonements ir aktīvs līdz
+    special: Tavs abonements ir aktīvs līdz
+    prepayment: Tavs priekšapmaksas abonements ir aktīvs līdz
+  activeCard:
+    active: pārtraukt abonēšanu
+    cancelled: atjaunot abonēšanu
+  about:
+    DELFIPLUS:
+      text: Par DELFI plus
+      link: //www.delfi.lv/par-delfi-plus/
+    MVP:
+      text: Par MVP
+      link: //www.delfi.lv/mvp/abonesana/
+  duration:
+    single:
+      first:
+        28d: Pirmās 4 nedēļas
+        1y: Pirmo gadu
+      default:
+        28d: 4 nedēļas
+        1y: Gada abonements
+    bundle:
+      first:
+        28d: Komplekts - pirmās 4 nedēļas
+        1y: Komplekts - pirmo gadu
+      default:
+        28d: Komplekts - 4 nedēļas
+        1y: Komplekts - gads
+    after: pēc tam
+  nextPaymentAfter:
+    28d: nākamais maksājums pēc 4 nedāļam -
+    1y: nākamais maksājums pēc gada -
+  subscribe: abonēt
+  article:
+    advantages:
+      DELFIPLUS:
+        1: Ik mēnesi vairāk nekā 80 rakstu un video materiālu
+        2: Analītisko rakstu sērijas un stāstniecības projekti
+        3: DELFI bez komercreklāmas
+      MVP:
+        1: Vairāk nekā 20 padziļināti materiāli par tev aktuālām sporta tēmām ik mēnesi
+        2: Sporta žurnālistikas līderu komanda
+        3: Iespēja tikties un apspriesties ar līdzīgi domājošiem
+    readContent: Lasi visu maksas saturu bez ierobežojumiem!

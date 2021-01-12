@@ -1,0 +1,42 @@
+query (
+    $process: Process!,
+    $createdBy: String,
+    $action: String,
+    $order: OrderAscDsc,
+    $limit: Int,
+    $offset: Int,
+    $ignoreCronCapturedLogs: Boolean
+){
+    logProcessing(
+        input: {
+            process: $process
+            createdBy: $createdBy
+            action: $action
+            order: $order
+            limit: $limit
+            offset: $offset
+            ignoreCronCapturedLogs: $ignoreCronCapturedLogs
+        }
+    ) {
+        logs {
+            action
+            created
+            description
+            content
+            createdBy
+        }
+        response {
+            status
+            message
+            error {
+                message
+            }
+        }
+        pager{
+            count
+            limit
+            offset
+        }
+    }
+}
+

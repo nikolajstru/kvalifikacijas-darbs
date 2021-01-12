@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>lv-vue-embed</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic-ext,latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://g.delphi.lv/delfi-bootstrap/assets/fonts/icons/icons.css?<%= + new Date() %>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
+  </head>
+  <body>
+    <style>
+        @media (min-width: 992px) {
+          #trySubscriptionBlockModal .modal-lg {
+            max-width: 950px;
+          }
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="https://g.delphi.lv/scms/?g=delfi-bootstrap.s&<%= + new Date() %>">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="https://static.delfi.net/login-api/test/test.js"></script>
+    <div id="accountPage"></div>
+    <div>
+        <div class="container">
+            <div style="max-width: 595px; margin:auto">
+                <div id="article"></div>
+            </div>
+        </div>
+    </div>
+    <div>
+<!--      <button class="btn btn-outline-science-blue archive-action">archive</button>-->
+      <button class="btn btn-outline-science-blue account-action">account</button>
+      <button class="btn btn-outline-science-blue sms-action">smsPayment</button>
+      <button class="btn btn-outline-science-blue payment-action">paymentBlock</button>
+      <button class="btn btn-outline-science-blue try-subscription-action">trySubscription</button>
+<!--      <button class="btn btn-outline-science-blue campus-action">capmus</button>-->
+<!--      <button class="btn btn-outline-science-blue kinolente-action">kinolente</button>-->
+<!--      <button class="btn btn-outline-science-blue unsubscribe-action">unsubscribe</button>-->
+      <button class="btn btn-outline-science-blue promo-login">promo login</button>
+      <button class="btn btn-outline-science-blue login">login</button>
+      <button class="btn btn-outline-science-blue article-payment">articlePayment</button>
+      <button class="btn btn-outline-danger logout d-flex ml-auto">Logout</button>
+    </div>
+    <hr/>
+    <noscript>
+      <strong>We're sorry but lv-vue-embed doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div class="container">
+      <div id="demo-page-placeholder"></div>
+    </div>
+    <div style="max-width: 676px">
+      <div id="kinolente"></div>
+    </div>
+
+    <div class="modal fade modal-update-on-close" id="smsPaymentModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div id="smsPayment"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="paymentBlockModal" class="modal fade modal-update-on-close" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content pt-3">
+          <div class="position-absolute w-100 z-index-1 p-2" style="left:0;top:0">
+            <button type="button" class="bs-modal-close" data-dismiss="modal" aria-label="Close">
+              <i class="icon-cross-thin"></i>
+            </button>
+          </div>
+          <div class="modal-body pt-0">
+            <div id="paymentBlock"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade modal-update-on-close" id="trySubscriptionBlockModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body px-0">
+            <div id="trySubscriptionBlock"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade modal-update-on-close" id="testingModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <button id="closeButtonChangeIntroductionPopup"
+                  type="button"
+                  data-dismiss="modal" aria-label="Close"
+                  class="btn close-custom position-absolute bg-none p-0 text-size-16"
+                  style="top: 11px; right: 15px; z-index: 1;">
+            <i aria-hidden="true" class="icon-cross-thin text-lightning-yellow"></i>
+          </button>
+          <div class="modal-body p-0">
+            <div id="testing"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="samsungLotteryPopup" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <button type="button"
+                  data-dismiss="modal" aria-label="Close"
+                  class="btn close-custom position-absolute bg-none p-0 text-size-16"
+                  style="top: 11px; right: 15px; z-index: 1;">
+            <i aria-hidden="true" class="icon-cross-thin text-lightning-yellow"></i>
+          </button>
+          <div class="modal-body p-0">
+            <div id="samsungLottery"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="loginApiPopup" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header pb-0 border-0">
+            <button class="btn close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body px-sm-5 pb-sm-5">
+            <div id="login-api">
+              <div id="login-api-content"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      #samsungLotteryPopup .modal-body{
+        background-color: #027BFF;
+      }
+      #testingModal .modal-dialog{
+        max-width: 520px;
+      }
+      #testingModal .modal-body{
+        background-color: black;
+        height: 800px;
+      }
+      @media (max-width: 500px) {
+        #testingModal .modal-body {
+          height: unset;
+          min-height: 90vh;
+        }
+      }
+    </style>
+
+
+    <script>
+      window.loadUserInfo = function() {
+        console.log('window.loadUserInfo');
+      };
+      window.ipAddress = '62.63.137.13';
+      window.cardPaymentProvider = 'decta';
+      window.cardPaymentBroken = false;
+      window.smsPaymentBroken = false;
+      window.delfiNativeApp = {};
+      window.user = {
+        loginApiToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaWQiOjY1NjUwOSwiaXNzIjoibG9naW4tYXBpIiwiZXhwIjoxNjE3ODgwMzYyLCJpYXQiOjE1ODYzNDQzNjJ9.zHlAdO5IcWfl7B7boxlMgObPGYgaD0JUeizkctM1Cic',
+        profile: {
+          displayName: "nikolajstruuu",
+          email: "nikolajs.trubacistovs@delfi.lv",
+          emailTmp: null,
+          emailVerified: true,
+          firstname: "Nikolajs",
+          id: 656509,
+          lastname: "Tru",
+          phone: "28229404",
+        },
+        info: {
+          access: true,
+          accessType: "special-access-user",
+          lastPaymentData: null,
+          productKey: null,
+          product: "DELFIPLUS",
+          recurring: false,
+          showRenewal: false,
+          userLoyal: true,
+          subscription: {
+            customer_id: 656509,
+            product: "DPLUS_USERID",
+            type: null,
+            uuid: "1",
+            valid_from: "2019-07-11T11:19:23.000Z",
+            valid_to: "2999-12-31T22:00:00.000Z",
+          }
+        },
+        /*info: {
+          access: false,
+          accessType: "in-active",
+          lastPaymentData: null,
+          productKey: null,
+          product: "DELFIPLUS",
+          recurring: false,
+          showRenewal: true,
+          subscription: null,
+          userLoyal: false,
+        },*/
+      };
+      window.delfiNativeApp.platform = 'desktop';
+      var $body = $("body");
+      $body
+        .on('click', '.article-payment', function() {
+          placeArticlePaymentBlock('article', 'MVP');
+        })
+        .on('click', '.payment-action', function() {
+          $('#paymentBlockModal').modal('show');
+          placePaymentBlock(
+            window.user.loginApiToken,              // loginApiToken
+            '1',                                    // price
+            'DELFIPLUS',                            // product
+            'paymentBlock',                         // placeholderId
+            placePaymentBlockCallback,              // callback
+            true,                                   // showRenewal
+            false,                                  // cardBroken
+            false,                                  // smsBroken
+            window.user.info.lastPaymentData,       // lastPAymentData
+            window.user.profile.email,              // userEmail
+            window.user.profile.id                  // userId
+          )
+        })
+        .on('click', '.logout', function() {
+          window.LoginAPI.logout();
+        })
+        .on('click', '.unsubscribe-action', function() {
+          $('#testingModal').modal('show');
+          placeUnsubscribeBlock(
+            'testing',                              // placeholderId
+            window.user.info.userLoyal,             // loyal
+            window.user.loginApiToken,              // loginApiToken
+            function (event) {                      // callback
+              console.log('event');
+              if (event === 'close') {
+                $('#testingModal').modal('hide');
+              }
+            },
+            'DPLUS_SMS',                            // productKey
+            '111111',                               // customerId
+            'MVP'                                   // product
+          )
+        })
+        .on('click', '.promo-login', function() {
+          placePromoCodeLoginBlock(
+                  'demo-page-placeholder',                // placeholderId
+                  'MVP',                                  // product
+                  'MVPTESTf2a001',                        // code
+                  function (event) {                      // callback
+                    console.log('event');
+                    if (event === 'close') {
+                      $('#testingModal').modal('hide');
+                    }
+                  }
+          )
+        })
+        .on('click', '.login', function() {
+          $('#loginApiPopup').modal('show');
+          placeLoginBlock(
+              'login-api',                                  // placeholderId
+          );
+        })
+        .on('click', '.samsungLottery', function() {
+          $('#samsungLotteryPopup').modal('show');
+          placeSamsungLotteryBlock(
+              'samsungLottery',                             // placeholderId
+          );
+        })
+        .on('click', '.kinolente-action', function() {
+          placeKinolenteVoting({
+            id: 1,
+            title: 'Vai tev šķiet, ka šis ir labs balsojuma dizains?',
+            subtitle: 'Balso un laimē 2 kino biļetes!',
+            resultTitle: 'Paldies, tu esi pieteicies 2 kino biļešu izlozei.',
+            resultSubtitle: 'Ar uzvaretajiem sazināsimies sūtot ziņu uz norādīto epastu.',
+            imageLink: 'https://g1.delphi.lv/images/pix/768x438/9WPW1vx0kfI/frozen-ledus-sirds-51779331.jpg',
+            questions: {
+              71: 'Supergarš dikti garas filmas nosaukumssd',
+              72: 'Kaut kāda filma',
+              73: 'Supergara filma',
+              74: 'Nedaudz īsāka',
+            },
+            answers: {
+              71: 30,
+              72: 35,
+            }
+          }, 'kinolente', close(), true);
+        })
+        .on('click', '.campus-action', function() {
+          placeCampusTest({
+            backendUrl: 'https://www.delfi.lv/misc/campus-quiz-backend/',
+            text: 'Riga',
+          },'demo-page-placeholder');
+        })
+        .on('click', '.archive-action', function() {
+          placeArchivePage({
+            channelId: 1,
+            text: '',
+          }, 'demo-page-placeholder')
+        })
+        .on('click', '.account-action', function() {
+          placeAccountPage();
+        })
+        .on('click', '.try-subscription-action', function() {
+          $('#trySubscriptionBlockModal').modal('show');
+          placeTrySubscriptionBlock(
+            '1',
+            'DELFIPLUS',
+            'trySubscriptionBlock',
+            close,
+            true,
+          )
+        });
+      $('.modal-update-on-close').on('hidden.bs.modal', function () {
+        console.log('update', );
+        var modalId = $(this).attr('id');
+        var className = modalId.substr(0, modalId.search('Modal'));
+        $(this).find('.modal-body').html('<div id="'+className+'"></div>');
+      });
+      $('#paymentBlockModal')
+              .on('hidden.bs.modal', function () {
+                $(this).children().addClass('modal-lg');
+                $(this).removeClass('trial-modal');
+              });
+    </script>
+
+    <script>
+      function gtag(){
+        console.log('gtag event');
+      }
+
+      function close(event){
+        console.log('sucesss called', event);
+      }
+      function placePaymentBlockCallback(event){
+        var modal = $('#paymentBlockModal');
+        if (event === 'close') {
+          $(modal).modal('hide');
+          location.reload();
+        } else if (event === 'smsSelected' || event === 'dectaSelected') {
+          $(modal).children().removeClass('modal-lg');
+        } else if (event === 'trialSelected') {
+          $(modal).children().addClass('modal-lg');
+          $(modal).addClass('trial-modal');
+        } else if (event === 'brokenPaymentMethodSelected') {
+          $('.modal').modal('hide');
+          $('#paymentBroken').modal('show');
+        }
+      }
+    </script>
+  </body>
+</html>
+
+<!---->

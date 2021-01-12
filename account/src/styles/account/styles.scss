@@ -1,0 +1,182 @@
+#table{
+  display: table;
+}
+.tr{
+  display: table-row;
+}
+.td {
+  display: table-cell;
+}
+.text-light-gray-account {
+  color: #707070;
+}
+.btn-outline-mvp-primary {
+  &:hover, &:active {
+    color: white !important;
+  }
+  color: black;
+}
+.btn-mvp-primary {
+  &:hover, &:active {
+    color: white !important;
+  }
+  color: white;
+}
+a.text-light-gray:hover {
+  color: #8a8a8a;
+}
+.payment-blocks {
+  .rounded-top {
+    border-radius: 15px 15px 0 0 !important;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.notification:hover {
+  background-color: #f5f6f7;
+  transition-duration: .2s;
+}
+
+@media (max-width: 768px) {
+  .main-account-nav .user-notifications-count {
+    left: unset;
+    bottom: unset;
+    right: 5px!important;
+    margin-top: -35px!important;
+  }
+}
+.notification {
+  .notification-circle {
+    height: 8px;
+    width: 8px;
+    display: none;
+    border-radius: 50%;
+    background: #0071ce;
+  }
+}
+.notification.unread {
+  font-weight: bold;
+  .notification-circle {
+    display: inline-block!important;
+  }
+}
+.btn-outline-lightning-yellow {
+  color: #212529!important;
+  &:disabled, &.disabled {
+    color: #36393d !important;
+  }
+}
+.btn-outline-mvp-primary {
+  color: #000!important;
+  &:disabled, &.disabled {
+    color: #202020 !important;
+  }
+}
+.mvp-triangle {
+  &:before{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    height: 0;
+    width: 0;
+    top: 4px;
+    border-color: #646464 transparent transparent transparent;
+    border-style: solid;
+    border-width: 10px 5px 0 5px;
+  }
+}
+.mvp-triangle-1:before {
+  transform: rotate(28deg);
+}
+.mvp-triangle-2:before {
+  transform: rotate(89deg);
+}
+
+.btn-promo-code {
+  &-DELFIPLUS, &-MVP {
+    position: absolute;
+    top: 21px;
+    right: -5px;
+    border-radius: 15px 0 0 15px;
+    bottom: unset;
+    left: unset;
+    outline: none!important;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    font-size: .875rem;
+    line-height: 1.5;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+    padding: 1px 17px;
+
+    .text {
+      display: none;
+    }
+    @media (min-width: 768px) {
+      padding: 4px 9px;
+      .text {
+        text-transform: uppercase;
+        max-height: 16px;
+        display: inline-block;
+        overflow: hidden;
+        transition: all .3s;
+        top: 1px;
+        position: relative;
+        width: 0;
+        padding-right: 5px;
+        opacity: 0;
+      }
+      &:hover {
+        .text {
+          opacity: 1;
+          white-space: nowrap;
+        }
+        .text.lv_LV {
+          width: 101px;
+        }
+        .text.ru_LV {
+          width: 140px;
+        }
+      }
+    }
+  }
+
+  &-DELFIPLUS {
+    color: #ffc820;
+    border-color: #ffc820;
+    background-color: #ffffff;
+    &:hover {
+      color: #ffffff;
+      background-color: #ffc820;
+    }
+  }
+
+  &-MVP {
+    color: #3abd73;
+    border-color: #3abd73;
+    background-color: #ffffff;
+    &:hover {
+      color: #ffffff;
+      background-color: #3abd73;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &-DELFIPLUS, &-MVP {
+      top: unset;
+      right: unset;
+      bottom: -2px;
+      left: 50%;
+      border-radius: 15px 15px 0 0;
+
+      transform: translateX(-50%);
+    }
+  }
+}

@@ -1,0 +1,22 @@
+mutation ($users: [User!]!, $title: String!, $type: String!, $body: String!, $uid: String!, $userId: Int!){
+    notifyUsers(
+        input: {
+            users: $users,
+            serviceType: "generic_web"
+            payload: {
+                title: $title
+                type: $type
+                body: $body
+                userId: $userId
+                uid: $uid
+            }
+        }
+    ) {
+        userId
+        response{
+            id
+            channel
+        }
+    }
+}
+

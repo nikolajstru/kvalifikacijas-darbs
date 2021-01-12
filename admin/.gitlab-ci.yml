@@ -1,0 +1,54 @@
+include:
+  - https://static.delfi.net/ci-yaml-include/latest/node/node_modules.yml
+  - https://static.delfi.net/ci-yaml-include/latest/node/lint.yml
+  - https://static.delfi.net/ci-yaml-include/latest/node/build.yml
+  - https://static.delfi.net/ci-yaml-include/latest/review/reviewapp-static.yml
+  - https://static.delfi.net/ci-yaml-include/latest/review/build-bundle-review.yml
+
+variables:
+  NODE_VERSION: "10"
+  DEPLOY_DIR: "/www/htdocs/gfx/misc/dplus-crm-tool"
+
+
+stages:
+  - prepare
+  - test
+  - build
+  - review
+  - deploy:admin
+  - deploy:frontend
+
+deploy:admin:
+  stage: deploy:admin
+  script:
+    - rsync -a "$CI_PROJECT_DIR/dist/" "$DEPLOY_DIR/dist"
+    - cd "$DEPLOY_DIR"
+    - ls -lah
+  tags:
+    - neo-deploy
+  environment:
+    name: deployment/admin
+    url: "https://neo.delfi.lv"
+
+.deploy_frontend: &deploy_frontend
+  stage: deploy:frontend
+  variables:
+    # no git checkout
+    GIT_STRATEGY: none
+  script:
+    - drsync -t "$DEPLOY_DIR/dist"
+  tags:
+    - neo-deploy
+  environment:
+    name: deployment/frontend
+    url: "https://www.delfi.lv"
+
+deploy:frontend:
+  <<: *deploy_frontend
+  when: manual
+  except: &filter_frontend
+    - master
+
+deploy:frontend:master:
+  <<: *deploy_frontend
+  only: *filter_frontend
